@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Reproductor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #player-container {
+      width: 720px;
+      height: 480px;
+    }
+  </style>
 </head>
 <body>
+  <div id="player-container"></div>
 
-<video
-  id="my-player"
-  class="video-js vjs-default-skin"
-  controls
-  autoplay
-  width="780"
-  height="450"
-  data-setup='{}'>
-  <source src="https://live-evg25.tv360.bitel.com.pe/bitel/atv/playlist.m3u8" type="application/x-mpegURL" />
-  Tu navegador no soporta HTML5.
-</video>
+  <script>
+    var width = 720;
+    var height = 480;
+    var channel = 'Felelelele';
+    var g = '1';
 
-<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    (function() {
+      var script = document.createElement('script');
+      script.src = 'https://new.allover.top/static/scripts/hucaster.js';
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+    })();
+  </script>
 </body>
 </html>
